@@ -6,10 +6,10 @@
 <data>
     <variable
         name="viewModel"
-        type="com.xammy.mvvmarchitecture.ui.newslisting.NewsViewModel" />
+        type="com.barfeemart.riderapp.ui.newslisting.NewsViewModel" />
     <variable
         name="adapter"
-        type="com.xammy.mvvmarchitecture.base.BaseAdapter" />
+        type="com.barfeemart.riderapp.base.BaseAdapter" />
 </data>
 
     <LinearLayout

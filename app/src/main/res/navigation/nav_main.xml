@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/newsListFragment"
-        android:name="com.xammy.mvvmarchitecture.ui.newslisting.NewsListFragment"
+        android:name="com.barfeemart.riderapp.ui.newslisting.NewsListFragment"
         android:label="NewsListFragment">
 
         <action
@@ -16,16 +16,16 @@
             >
             <argument
                 android:name="news"
-                app:argType="com.xammy.mvvmarchitecture.data.news.News" />
+                app:argType="com.barfeemart.riderapp.data.news.News" />
         </action>
     </fragment>
     <fragment
         android:id="@+id/newsDetailsFragment"
-        android:name="com.xammy.mvvmarchitecture.ui.newsdetails.NewsDetailsFragment"
+        android:name="com.barfeemart.riderapp.ui.newsdetails.NewsDetailsFragment"
         android:label="NewsDetailsFragment">
         <argument
              android:name="news"
-            app:argType="com.xammy.mvvmarchitecture.data.news.News" />
+            app:argType="com.barfeemart.riderapp.data.news.News" />
 
     </fragment>
 
