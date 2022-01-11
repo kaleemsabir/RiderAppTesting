@@ -1,4 +1,4 @@
-# MVVM-Clean-Architecture
+# Rider App
 
 # Description
 A simple project for [News](https://newsapi.org/) This project demonstrates usage of Kotlin coroutines and Flow with MVVM architecture of Android applications.
