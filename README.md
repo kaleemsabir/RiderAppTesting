@@ -1,22 +1,12 @@
-# MVVM-Clean-Architecture
+# Rider App
 
 # Description
-A simple project for [News](https://newsapi.org/) This project demonstrates usage of Kotlin coroutines and Flow with MVVM architecture of Android applications.
-
-![license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
-[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-<a href="https://github.com/7alma9/MVVMArchitecture"><img alt="License" src="https://img.shields.io/static/v1?label=GitHub&message=7alma9&color=C51162"/></a><br>
-
- 
-# Screenshot
-![Screen shot0](https://github.com/7alma9/MVVMArchitecture/blob/main/screenshots/device-2021-02-22-192023.png)
-![Screen shot1](https://github.com/7alma9/MVVMArchitecture/blob/main/screenshots/device-2021-02-22-192051.png)
- 
+A rider app for express delivery wuth usage of Kotlin coroutines and Flow with MVVM architecture of Android applications.
 
  ## How to build on your environment
-Add your API key in local.properties file.
+Add your base url in local.properties file.
 ```xml
-api_key=YOUR_API_KEY
+base_url=YOUR_API_KEY
 ```
 
 ## Libraries used
@@ -36,14 +26,18 @@ api_key=YOUR_API_KEY
 7. [Glide ](https://github.com/bumptech/glide) - For Photos loading
 
 
-## Todos:
-
-1 - Unit test
-
-2 - Room Integration
-
 
 ## Acknowledgements:
-
-* [skydoves](https://github.com/skydoves/TheMovies)
 * [ar9t4](https://github.com/ar9t4/android-boilerplate-mvvm)
+
+## Contributors
+
+### Abid Jamil
+Abid Jamil, Technical Lead at GrocerApp. He has expertise in Native Android | React Native | IOS | Java | Kotlin | Javascript | MVVM | MVP | RxJava | Dagger | Material Design | Live Data | Data Binding. Futhermore, He is open source contribution and computer science researcher.
+
+Github : abidjamil
+
+### Kaleem Sabir
+Kaleem Sabir, Senior Android Developer at GrocerApp. He has expertise in Native Android| Java | Kotlin | MVVM | MVP | RxJava | Dagger | Material Design | Live Data | Data Binding | VOIP | SINCH | CHAT SDK.
+
+Github : kaleemsabir
