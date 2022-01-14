@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/newsListFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/newsListFragment"
@@ -24,8 +24,55 @@
         android:name="com.barfeemart.riderapp.ui.newsdetails.NewsDetailsFragment"
         android:label="NewsDetailsFragment">
         <argument
-             android:name="news"
+            android:name="news"
             app:argType="com.barfeemart.riderapp.data.news.News" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.barfeemart.riderapp.ui.login.LoginFragment"
+        android:label="LogInFragment">
+
+        <action
+            android:id="@+id/actionOrderListing"
+            app:destination="@+id/orderListingFragment">
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/orderListingFragment"
+        android:name="com.barfeemart.riderapp.ui.orderTab.TabFragment"
+        android:label="orderListingFragment">
+        <action
+            android:id="@+id/actionOrderDetail"
+            app:destination="@+id/orderDetailFragment">
+
+        </action>
+        <argument
+            android:name="order"
+            app:argType="com.barfeemart.riderapp.data.orders.Order" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.barfeemart.riderapp.ui.orderdetail.OrderDetailFragment"
+        android:label="orderDetailFragment">
+        <action
+            android:id="@+id/actionPaymentCollection"
+            app:destination="@+id/paymentCollectionFragment">
+        </action>
+        <argument
+            android:name="order"
+            app:argType="com.barfeemart.riderapp.data.orders.Order" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/paymentCollectionFragment"
+        android:name="com.barfeemart.riderapp.ui.paymentcollection.PaymnetCollectionFragment"
+        android:label="paymentCollectionFragment">
 
     </fragment>
 

@@ -4,10 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import com.barfeemart.riderapp.api.Result
 import com.barfeemart.riderapp.data.news.NewsResponse
 import kotlinx.coroutines.Job
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
+
 
 interface AllNewsRepository {
      fun getAllNews(

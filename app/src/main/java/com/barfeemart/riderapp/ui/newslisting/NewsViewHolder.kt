@@ -5,10 +5,7 @@ import com.barfeemart.riderapp.base.BaseViewHolder
 import com.barfeemart.riderapp.data.news.News
  import com.barfeemart.riderapp.databinding.ItemNewsBinding
 
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
+
 
 class NewsViewHolder(
     view: ItemNewsBinding,

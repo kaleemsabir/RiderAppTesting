@@ -11,15 +11,16 @@ created on 2/22/21
  **/
 
 @Suppress("unused", "LeakingThis")
-abstract class BaseViewHolder<V:ViewDataBinding>(private val view: V) :
-    RecyclerView.ViewHolder(view.root),View.OnClickListener,View.OnLongClickListener {
-   init {
-       view.root.setOnClickListener(this)
-       view.root.setOnLongClickListener(this)
-   }
-    abstract fun bindData(data:Any,position:Int)
-    fun view()=view.root
-    fun binding()=view
-    fun context(): Context =view.root.context
+abstract class BaseViewHolder<V : ViewDataBinding>(private val view: V) :
+    RecyclerView.ViewHolder(view.root), View.OnClickListener, View.OnLongClickListener {
+    init {
+        view.root.setOnClickListener(this)
+        view.root.setOnLongClickListener(this)
+    }
+
+    abstract fun bindData(data: Any, position: Int)
+    fun view() = view.root
+    fun binding() = view
+    fun context(): Context = view.root.context
 
 }

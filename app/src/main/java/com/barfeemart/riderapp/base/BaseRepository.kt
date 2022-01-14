@@ -5,12 +5,11 @@ import com.barfeemart.riderapp.api.Result
 import com.barfeemart.riderapp.data.ErrorDescription
 import kotlinx.coroutines.*
 import retrofit2.HttpException
+import retrofit2.http.Body
+import retrofit2.http.Field
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
+
 
 abstract class BaseRepository<Response, Params> internal constructor() {
 
@@ -36,4 +35,5 @@ abstract class BaseRepository<Response, Params> internal constructor() {
             emit(Result.Failure<Error>(ErrorDescription(ex.localizedMessage!!)))
         }
     }
+
 }

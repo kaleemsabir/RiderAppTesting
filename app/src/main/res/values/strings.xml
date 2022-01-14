@@ -5,4 +5,18 @@
     <string name="no_internet_connectivity">No Internet Connect</string>
     <string name="please_confirm">Please Confirm</string>
     <string name="okay">Okay</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="grocer">Grocer</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="order_items">Order Items</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="direction">Direction</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="end_trip">End Trip</string>
+    <string name="pending_amount">Pending Amount</string>
+    <string name="eta">ETA</string>
+
 </resources>

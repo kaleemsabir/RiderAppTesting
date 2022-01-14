@@ -169,4 +169,5 @@ abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(), BaseView
     private fun unregisterNetworkCallback() {
         connectivityManager.unregisterNetworkCallback(networkCallback)
     }
+    
 }

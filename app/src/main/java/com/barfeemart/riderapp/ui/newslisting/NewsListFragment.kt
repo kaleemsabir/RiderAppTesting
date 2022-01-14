@@ -8,10 +8,7 @@ import com.barfeemart.riderapp.databinding.FragmentNewListBinding
 import com.barfeemart.riderapp.ui.newsdetails.NewsDetailsFragmentArgs
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
+
 
 class NewsListFragment : BaseFragment<FragmentNewListBinding>() {
 

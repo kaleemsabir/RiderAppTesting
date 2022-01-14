@@ -1,23 +1,21 @@
 package com.barfeemart.riderapp.bindings
 
 import androidx.databinding.BindingAdapter
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.barfeemart.riderapp.api.Result
 import com.barfeemart.riderapp.base.BaseAdapter
 import com.barfeemart.riderapp.data.news.NewsResponse
+import com.barfeemart.riderapp.data.orders.Order
 import com.barfeemart.riderapp.ui.newslisting.NewsAdapter
 import com.barfeemart.riderapp.ui.newslisting.NewsViewModel
+import com.barfeemart.riderapp.ui.orderlistingongoing.OrderAdapter
 import com.barfeemart.riderapp.util.Paginator
 
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
 
 @BindingAdapter("adapter")
 fun bindRecyclerViewAdapter(recyclerView: RecyclerView, adapter: BaseAdapter<*>) {
     recyclerView.adapter = recyclerView.adapter ?: adapter
-
 }
 
 @BindingAdapter("newsPagination")
@@ -43,6 +41,19 @@ fun bindRecyclerData(recyclerView: RecyclerView, response: Result<NewsResponse>?
                 adapter?.addNewsList(newsResponse.articles)
             }
         }
+    }
+
+}
+
+@BindingAdapter("setOrders")
+fun bindRecyclerData(recyclerView: RecyclerView, response: MutableLiveData<List<Order>>?) {
+    response?.let {
+        it.let { response ->
+            val adapter = recyclerView.adapter as? OrderAdapter
+            adapter?.totalCount = response.value!!.count()
+            adapter?.addOrderList(response.value!!)
+        }
+
     }
 
 }

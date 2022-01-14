@@ -1,7 +1,7 @@
 package com.barfeemart.riderapp.di
 
 import com.barfeemart.riderapp.BuildConfig
-import com.barfeemart.riderapp.api.AllNewsApi
+import com.barfeemart.riderapp.api.AllRiderApi
 import com.barfeemart.riderapp.constants.connectionTimeOut
 import com.barfeemart.riderapp.constants.readTimeOut
 import com.barfeemart.riderapp.util.NetworkInterceptor
@@ -12,15 +12,12 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
+
 
 val networkModule = module {
     single { createOkHttpClient() }
     single { createRetrofit(get(), BuildConfig.BASE_URL) }
-    single { createAllNewsApi(get()) }
+    single { createAllRiderApi(get()) }
  }
 
 fun createOkHttpClient(): OkHttpClient {
@@ -47,4 +44,4 @@ fun createRetrofit(okHttpClient: OkHttpClient, url: String): Retrofit {
         .build()
 }
 
-fun createAllNewsApi(retrofit: Retrofit): AllNewsApi = retrofit.create(AllNewsApi::class.java)
+fun createAllRiderApi(retrofit: Retrofit): AllRiderApi = retrofit.create(AllRiderApi::class.java)

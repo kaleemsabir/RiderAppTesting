@@ -3,9 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_login.xml" value="0.12771739130434784" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/drawable/bg_white_with_orange_border.xml" value="0.2169230769230769" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/drawable/cart_button_selected.xml" value="0.2169230769230769" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/drawable/cart_button_selector.xml" value="0.2169230769230769" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/drawable/cart_button_unselected.xml" value="0.2169230769230769" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/drawable/rounded_grey.xml" value="0.2169230769230769" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/font/aguafina_script.xml" value="0.1265625" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/font/bold.xml" value="0.1265625" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_news_details.xml" value="0.1" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_order_detail.xml" value="0.2484548825710754" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_order_listing.xml" value="0.25" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_order_listing_on_going.xml" value="0.33" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_paymnet_collection.xml" value="0.25" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/fragment_tab_layout.xml" value="0.1213768115942029" />
         <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/item_news.xml" value="0.12771739130434784" />
+        <entry key="..\:/RiderApp/RiderApp/app/src/main/res/layout/orders_item.xml" value="0.2842998585572843" />
       </map>
     </option>
   </component>

@@ -1,19 +1,16 @@
 package com.barfeemart.riderapp.repository.implementation
 
 import androidx.lifecycle.MutableLiveData
-import com.barfeemart.riderapp.api.AllNewsApi
+import com.barfeemart.riderapp.api.AllRiderApi
 import com.barfeemart.riderapp.api.Result
 import com.barfeemart.riderapp.base.BaseRepository
  import com.barfeemart.riderapp.data.news.NewsResponse
 import com.barfeemart.riderapp.repository.AllNewsRepository
 import kotlinx.coroutines.Job
-/**
-@author Salman Aziz
-created on 2/22/21
- **/
+
 
 @Suppress("UNCHECKED_CAST")
-class AllNewsRepositoryImpl(private val allNewsApi: AllNewsApi) :
+class AllNewsRepositoryImpl(private val allNewsApi: AllRiderApi) :
     AllNewsRepository {
 
     override fun getAllNews(
